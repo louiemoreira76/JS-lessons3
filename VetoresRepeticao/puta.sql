@@ -1,0 +1,19 @@
+SELECT DS_MODELO, NM_ANUNCIANTE
+FROM TB_ANUNCIANTE AS TAB1
+INNER JOIN TB_ANUNCIO AS TAB2.
+ON TAB1.ID_ANUNCIANTE = TAB2.ID_ANUNCIO
+WHERE QTD_VENDIDOS BETWEEN '1' AND '3'
+AND DS_SEXO LIKE '%Female%'
+AND DS_CARGO LIKE '%Programmer%';
+
+SELECT *
+FROM tb_anuncio
+WHERE  year(dt_anuncio) LIKE '2023'
+AND bt_usado = 1
+AND tp_vendedor LIKE '%FISICA%'
+AND ds_cor LIKE '%ORANGE%'
+OR 
+year(dt_anuncio) LIKE '2023'
+AND bt_usado = 1
+AND tp_vendedor LIKE '%FISICA%'
+AND ds_cor LIKE '%PINK%'
